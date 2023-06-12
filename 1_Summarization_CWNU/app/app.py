@@ -12,10 +12,6 @@ logger = logging.getLogger(__name__)
 
 api_service = Service()
 
-@app.route('/')
-def home():
-    return "CWNU summarization App Works!"
-
 @app.route('/api/task_list', methods=['GET'])
 def task_list():
     return Service.get_task_list()
