@@ -1,0 +1,521 @@
+[
+  {
+    "id": "1",
+    "predicate": "is_a",
+    "meaning": "A는 B이다",
+    "template": "{A}는 {B}이다"
+  },
+  {
+    "id": "2",
+    "predicate": "is_not",
+    "meaning": "A는 B가 아니다",
+    "template": "{A}는 {B}가 아니다"
+  },
+  {
+    "id": "3",
+    "predicate": "has_a",
+    "meaning": "A는 B를 소유한다. A는 B의 값을 갖는다",
+    "template": "{A}는 {B}를 소유한다"
+  },
+  {
+    "id": "4",
+    "predicate": "has_no",
+    "meaning": "A는 B를 가지고 있지 않다. 소유하지 않는다. 없다.",
+    "template": "{A}는 {B}를 소유하지 않는다"
+  },
+  {
+    "id": "5",
+    "predicate": "is_titled",
+    "meaning": "A의 제목은 B이다",
+    "template": "{A}의 제목은 {B}이다"
+  },
+  {
+    "id": "6",
+    "predicate": "content_is",
+    "meaning": "A의 본문내용은 B이다",
+    "template": "{A}의 본문내용은 {B}이다"
+  },
+  {
+    "id": "7",
+    "predicate": "should_be",
+    "meaning": "A는 B이어야 한다.",
+    "template": "{A}는 {B}이어야 한다"
+  },
+  {
+    "id": "8",
+    "predicate": "can",
+    "meaning": "A는 B를 할 수 있다.",
+    "template": "{A}는 {B}를 할 수 있다"
+  },
+  {
+    "id": "9",
+    "predicate": "cannot",
+    "meaning": "A는 B를 할 수 없다.",
+    "template": "{A}는 {B}를 할 수 없다"
+  },
+  {
+    "id": "10",
+    "predicate": "includes",
+    "meaning": "A는 B를 포함한다, A는 B의 경우를 포함한다",
+    "template": "{A}는 {B}를 포함한다"
+  },
+  {
+    "id": "11",
+    "predicate": "belongs",
+    "meaning": "A는 B에 소속한다.",
+    "template": "{A}는 {B}에 소속한다"
+  },
+  {
+    "id": "12",
+    "predicate": "case_of",
+    "meaning": "A는 B 값 중의 한가지이다.",
+    "template": "{A}는 {B} 값 중의 한가지이다"
+  },
+  {
+    "id": "13",
+    "predicate": "example_of",
+    "meaning": "A는 B의 예시이다",
+    "template": "{A}는 {B}의 예시이다"
+  },
+  {
+    "id": "14",
+    "predicate": "exception_of",
+    "meaning": "A는 B의 예외이다.",
+    "template": "{A}는 {B}의 예외이다"
+  },
+  {
+    "id": "15",
+    "predicate": "is_of",
+    "meaning": "B의 A, A는 B의 ~~이다. A는 B에 에 속한 것이다. A는 B의 일부이다.",
+    "template": "{A}는 {B}의 일부이다"
+  },
+  {
+    "id": "16",
+    "predicate": "is_not_of",
+    "meaning": "A는 B에 에 속하지 않는 것이다. A는 B의 일부가 아니다.",
+    "template": "{A}는 {B}의 일부가 아니다"
+  },
+  {
+    "id": "17",
+    "predicate": "is_applicable",
+    "meaning": "A는 B에 적용 가능하다. 대상이다. 대상이 된다.",
+    "template": "{A}는 {B}에 적용 가능하다"
+  },
+  {
+    "id": "18",
+    "predicate": "is_not_applied",
+    "meaning": "A는 B에 적용되지 않는다",
+    "template": "{A}는 {B}에 적용되지 않는다"
+  },
+  {
+    "id": "19",
+    "predicate": "excludes",
+    "meaning": "A는 B를 제외한다. A는 B를 포함하지 않는다",
+    "template": "{A}는 {B}를 포함하지 않는다"
+  },
+  {
+    "id": "20",
+    "predicate": "has_exception",
+    "meaning": "A는 B를 예외로 한다. B의 경우에는 A 또는 A의 적용을 제외한다.",
+    "template": "{A}는 {B}를 예외로 한다"
+  },
+  {
+    "id": "21",
+    "predicate": "has_cases",
+    "meaning": "A가 B의 여러가지 값을 가진다",
+    "template": "{A}가 {B}의 여러가지 값을 가진다"
+  },
+  {
+    "id": "22",
+    "predicate": "means",
+    "meaning": "A는 B를 의미한다.",
+    "template": "{A}는 {B}를 의미한다"
+  },
+  {
+    "id": "23",
+    "predicate": "follows",
+    "meaning": "A는 B(정의 또는 내용)를 따른다",
+    "template": "{A}는 {B}를 따른다"
+  },
+  {
+    "id": "24",
+    "predicate": "specifies",
+    "meaning": "A는 B를 정한다. A는 B의 내용, 상세한 사항, 서식/문서/양식/방식을 특정한다",
+    "template": "{A}는 {B}를 특정한다"
+  },
+  {
+    "id": "25",
+    "predicate": "decides",
+    "meaning": "A는 B를 결정한다. ~(의 값)을 결정한다",
+    "template": "{A}는 {B}를 결정한다",
+    "note": "여러 선택 값 중 또는 세율 중 고르는 결정도 decides 사용"
+  },
+  {
+    "id": "26",
+    "predicate": "defines",
+    "meaning": "A는 B를 정의한다.",
+    "template": "{A}는 {B}를 정의한다"
+  },
+  {
+    "id": "27",
+    "predicate": "is_defined_at",
+    "meaning": "A는 B에 정의되어 있다.",
+    "template": "{A}는 {B}에 정의되어 있다"
+  },
+  {
+    "id": "28",
+    "predicate": "is_located_at",
+    "meaning": "A는 B에 있다. A는 B에 위치한다. A는 B에서 언급된다",
+    "template": "{A}는 {B}에 있다"
+  },
+  {
+    "id": "29",
+    "predicate": "does",
+    "meaning": "A는 B를 한다",
+    "template": "{A}는 {B}를 한다",
+    "note": "경영하다 등 하다의 의미만으로 대체할 수 있을 때 포괄적으로 사용"
+  },
+  {
+    "id": "30",
+    "predicate": "does_not",
+    "meaning": "A는 B를 하지 않는다.",
+    "template": "{A}는 {B}를 하지 않는다"
+  },
+  {
+    "id": "31",
+    "predicate": "gets",
+    "meaning": "A는 B를 받는다. 취득한다",
+    "template": "{A}는 {B}를 받는다"
+  },
+  {
+    "id": "32",
+    "predicate": "gives",
+    "meaning": "A는 B를 준다. A에게 B를 준다. 인도한다.",
+    "template": "{A}에게 {B}를 준다"
+  },
+  {
+    "id": "33",
+    "predicate": "pays",
+    "meaning": "(돈을, 세금을) 내다. 납부하다.",
+    "template": "{A}는 {B}를 납부한다"
+  },
+  {
+    "id": "34",
+    "predicate": "submits",
+    "meaning": "A는 B를 제출한다. A는 B에게 제출한다. A는 B를 제시하다",
+    "template": "{A}는 {B}를 제출한다"
+  },
+  {
+    "id": "35",
+    "predicate": "registers",
+    "meaning": "A는 B를 등록한다. A는 B에 등록한다.",
+    "template": "{A}는 {B}를 등록한다"
+  },
+  {
+    "id": "36",
+    "predicate": "issues",
+    "meaning": "A는 B(세금계산서 등)을 발행하다, 교부하다.",
+    "template": "{A}는 {B}을 발행한다",
+    "note": "독촉장 발행 내용에서 issue 사용"
+  },
+  {
+    "id": "37",
+    "predicate": "provides",
+    "meaning": "A는 B를 공급한다. A는 B를 제공한다. A에게 B를 제공한다.",
+    "template": "{A}는 {B}를 제공한다"
+  },
+  {
+    "id": "38",
+    "predicate": "is_provided",
+    "meaning": "A는 B를 공급받는다.",
+    "template": "{A}는 {B}를 공급받는다"
+  },
+  {
+    "id": "39",
+    "predicate": "uses",
+    "meaning": "A는 B를 사용한다",
+    "template": "{A}는 {B}를 사용한다"
+  },
+  {
+    "id": "40",
+    "predicate": "manages",
+    "meaning": "A는 B를 관리한다. 처리한다. 처분한다. 관할한다. (책임을 갖고) 행동한다.",
+    "template": "{A}는 {B}를 관리한다"
+  },
+  {
+    "id": "41",
+    "predicate": "operates",
+    "meaning": "A는 B를 운영한다.",
+    "template": "{A}는 {B}를 운영한다",
+    "note": "사업을 영위하다는 의미에 operates 사용"
+  },
+  {
+    "id": "42",
+    "predicate": "replaces",
+    "meaning": "A는 B를 대체한다,",
+    "template": "{A}는 {B}를 대체한다"
+  },
+  {
+    "id": "43",
+    "predicate": "requires",
+    "meaning": "A는 B를 요구한다. A는 B를 필요로 한다. A는 B를 요건으로 한다",
+    "template": "{A}는 {B}를 필요로 한다",
+    "note": "어떤 조건/요건을 필요로 할 때 requires 사용"
+  },
+  {
+    "id": "44",
+    "predicate": "requests",
+    "meaning": "A는 B를 요청한다. 청구한다. 세금을 청구/부과/징수 하다",
+    "template": "{A}는 {B}를 청구한다"
+  },
+  {
+    "id": "45",
+    "predicate": "adds",
+    "meaning": "A에서 B를 더한다. 산입한다.",
+    "template": "{A}에서 {B}를 산입한다"
+  },
+  {
+    "id": "46",
+    "predicate": "subtracts",
+    "meaning": "A에서 B를 뺀다. A에서 B를 공제한다.",
+    "template": "{A}에서 {B}를 뺀다"
+  },
+  {
+    "id": "47",
+    "predicate": "is_not_subtracted",
+    "meaning": "A에서 B를 공제하지 아니한다.",
+    "template": "{A}에서 {B}를 공제하지 아니한다"
+  },
+  {
+    "id": "48",
+    "predicate": "multiplies",
+    "meaning": "A에서 B를 곱한다.",
+    "template": "{A}에서 {B}를 곱한다"
+  },
+  {
+    "id": "49",
+    "predicate": "divides",
+    "meaning": "분리하다. 구분하다. 떼다. 나누다. A에서 B를 나눈다.",
+    "template": "{A}에서 {B}를 나눈다"
+  },
+  {
+    "id": "50",
+    "predicate": "cannot_divide",
+    "meaning": "A는 B를 분리할 수 없다. 구분할 수 없다. 뗄 수 없다. 나눌 수 없다.",
+    "template": "{A}는 {B}를 분리할 수 없다"
+  },
+  {
+    "id": "51",
+    "predicate": "reviews",
+    "meaning": "A는 B를 검토한다",
+    "template": "{A}는 {B}를 검토한다"
+  },
+  {
+    "id": "52",
+    "predicate": "announces",
+    "meaning": "A는 B를 고시, 공지, 발표한다",
+    "template": "{A}는 {B}를 공지한다",
+    "note": "public하게 모두에게 고시, 공지, 발표"
+  },
+  {
+    "id": "53",
+    "predicate": "informs",
+    "meaning": "A는 B를 (B에게) 통지하다. 통보하다. 알리다. B에게 A를 알리다.",
+    "template": "{A}는 {B}를 통지한다",
+    "note": "특정대상 (개인 또는 집단)에게 알림"
+  },
+  {
+    "id": "54",
+    "predicate": "declares",
+    "meaning": "A는 B를 신고한다.",
+    "template": "{A}는 {B}를 신고한다"
+  },
+  {
+    "id": "55",
+    "predicate": "cancels",
+    "meaning": "A는 B를 취소하다. 해제하다. 해지하다. 철회하다",
+    "template": "{A}는 {B}를 취소한다"
+  },
+  {
+    "id": "56",
+    "predicate": "delegates_to",
+    "meaning": "A는(가) B에게 위임하다. 맡기다. 권한을 주다",
+    "template": "{A}가 {B}에게 위임한다"
+  },
+  {
+    "id": "57",
+    "predicate": "makes",
+    "meaning": "A는 B를 만들다. 작성하다. 생성하다. 발행하다. A는 B를 (B의 경우를) 초래하다.",
+    "template": "{A}는 {B}를 만든다"
+  },
+  {
+    "id": "58",
+    "predicate": "exempt",
+    "meaning": "A는(에 대해서는) B를 면제한다",
+    "template": "{A}는 {B}를 면제한다"
+  },
+  {
+    "id": "59",
+    "predicate": "lives",
+    "meaning": "A는 B에 산다, 거주한다",
+    "template": "{A}는 {B}에 거주한다"
+  },
+  {
+    "id": "60",
+    "predicate": "considers",
+    "meaning": "A는 B를 고려한다. 감안한다. 감안하여 (결정한다)",
+    "template": "{A}는 {B}를 감안한다"
+  },
+  {
+    "id": "61",
+    "predicate": "establishes",
+    "meaning": "A는 B를 설립한다",
+    "template": "{A}는 {B}를 설립한다"
+  },
+  {
+    "id": "62",
+    "predicate": "becomes",
+    "meaning": "A가 B로 되다, A가 B로 바뀌다",
+    "template": "{A}가 {B}로 되다"
+  },
+  {
+    "id": "63",
+    "predicate": "installs",
+    "meaning": "A가 B를 설치하다",
+    "template": "{A}가 {B}를 설치하다"
+  },
+  {
+    "id": "64",
+    "predicate": "revise",
+    "meaning": "A가 B를 수정하다. 경정하다. (갱정하다)",
+    "template": "{A}가 {B}를 수정하다"
+  },
+  {
+    "id": "65",
+    "predicate": "related_to",
+    "meaning": "A는 B와 관련이 있다.",
+    "template": "{A}는 {B}와 관련이 있다"
+  },
+  {
+    "id": "66",
+    "predicate": "not_related",
+    "meaning": "A는 B와 관련이 없다",
+    "template": "{A}는 {B}와 관련이 없다"
+  },
+  {
+    "id": "67",
+    "predicate": "is_matched",
+    "meaning": "A는 B에 맞는다. 부합한다. 요건에 맞는다. 요건에 부합한다.",
+    "template": "{A}는 {B}에 부합한다"
+  },
+  {
+    "id": "68",
+    "predicate": "is_assumed",
+    "meaning": "A는 B로 본다. 추정된다. 가정된다.",
+    "template": "{A}는 {B}로 추정된다"
+  },
+  {
+    "id": "69",
+    "predicate": "is_not_assumed",
+    "meaning": "A는 B로 보지 않는다. 간주되지 않는다",
+    "template": "{A}는 {B}로 간주되지 않는다"
+  },
+  {
+    "id": "70",
+    "predicate": "is_responsible",
+    "meaning": "A는 B를 책임진다. A는 B의 책임을 가진다. 의무를 진다.",
+    "template": "{A}는 {B}를 책임진다"
+  },
+  {
+    "id": "71",
+    "predicate": "is_less_than",
+    "meaning": "A는 B보다 작다, 작다, 미달한다.",
+    "template": "{A}는 {B}보다 작다"
+  },
+  {
+    "id": "72",
+    "predicate": "is_bigger_than",
+    "meaning": "A는 B보다 크다, 초과한다",
+    "template": "{A}는 {B}보다 크다"
+  },
+  {
+    "id": "73",
+    "predicate": "is_under",
+    "meaning": "A는 B보다 작다. 적다. A는 B를 한도로 한다. A는 B를 넘지 않는다.",
+    "template": "{A}는 {B}를 한도로 한다"
+  },
+  {
+    "id": "74",
+    "predicate": "is_through",
+    "meaning": "A는 B를 통한다. A는 B를 통하여 ~~ 한다.",
+    "template": "{A}는 {B}를 통한다"
+  },
+  {
+    "id": "75",
+    "predicate": "is_from",
+    "meaning": "A는 B로 부터 발생한다, ~부터 나타난다. A는 B로부터 시작된다. A는 B를 원인으로 한다.",
+    "template": "{A}는 {B}를 원인으로 한다",
+    "note": "소멸시효에서 is_from, is_to 조합으로 사용"
+  },
+  {
+    "id": "76",
+    "predicate": "is_declared",
+    "meaning": "A는 B에게 신고한다",
+    "template": "{A}는 {B}에게 신고한다"
+  },
+  {
+    "id": "77",
+    "predicate": "is_to",
+    "meaning": "A는 B까지이다. A는 B에게 전해진다/제출된다/제출한다/준다",
+    "template": "{A}는 {B}까지이다",
+    "note": "소멸시효에서 is_from, is_to 조합으로 사용"
+  },
+  {
+    "id": "78",
+    "predicate": "is_no_need",
+    "meaning": "A는 B를 필요로 하지 않는다",
+    "template": "{A}는 {B}를 필요로 하지 않는다"
+  },
+  {
+    "id": "79",
+    "predicate": "is_priority_than",
+    "meaning": "A는 B보다 우선이다. 우선된다. 우선하여 징수된다. 우선하여 부과된다. 우선하여 변제된다.",
+    "template": "{A}는 {B}보다 우선이다"
+  },
+  {
+    "id": "80",
+    "predicate": "is_similar",
+    "meaning": "A는 B와 유사하다",
+    "template": "{A}는 {B}와 유사하다"
+  },
+  {
+    "id": "81",
+    "predicate": "is_not_considered",
+    "meaning": "A는 B에 고려하지 않는다, B는 A에 불구하고,",
+    "template": "{A}는 {B}에 고려하지 않는다"
+  },
+  {
+    "id": "82",
+    "predicate": "is_for",
+    "meaning": "A는 B하기 위한 목적으로, A는 B하기 위하여, A는 B를 위하여",
+    "template": "{A}는 {B}를 위하여"
+  },
+  {
+    "id": "83",
+    "predicate": "is_different_from",
+    "meaning": "A는 B와 서로 다르다",
+    "template": "{A}는 {B}와 서로 다르다"
+  },
+  {
+    "id": "84",
+    "predicate": "is_when",
+    "meaning": "~~할 때에 ~~ 한다, ~~ 때에",
+    "template": "{B}할 때에 {A} 한다"
+  },
+  {
+    "id": "85",
+    "predicate": "is_about",
+    "meaning": "~~에 대해서, ~~에 관해서",
+    "template": "{B}에 대한 {A}"
+  }
+]

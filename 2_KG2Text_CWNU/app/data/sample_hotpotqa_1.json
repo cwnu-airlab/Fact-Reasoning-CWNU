@@ -1,0 +1,39 @@
+{
+  "question": {
+    "text": "샤를 드골 대통령과 콘라드 아데나워 총리가 서명한 조약은 어느 도시에서 이루어졌는가?",
+    "language": "kr",
+    "domain": "common-sense"
+  },
+  "triples": [
+    [
+      "샤를 드골",
+      "per:title",
+      "대통령"
+    ],
+    [
+      "샤를 드골",
+      "per:colleagues",
+      "콘라드 아데나워"
+    ],
+    [
+      "샤를 드골",
+      "per:title",
+      "총리"
+    ],
+    [
+      "대통령",
+      "per:colleagues",
+      "콘라드 아데나워"
+    ],
+    [
+      "대통령",
+      "no_relation",
+      "총리"
+    ],
+    [
+      "콘라드 아데나워",
+      "per:title",
+      "총리"
+    ]
+  ]
+}
